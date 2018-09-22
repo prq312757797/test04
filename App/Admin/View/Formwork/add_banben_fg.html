@@ -1,0 +1,104 @@
+<include file="Public/head" />
+<div class="contert">	
+
+	<if condition="$is_add eq 1">
+		<h2>小程序风格添加</h2>
+		<form  class="form-horizontal" role="form" action="{:U('Formwork/runAdd_banben_fg',array('bid'=>$info2))}" method="post">
+
+	</if>
+	<if condition="$is_add eq 2">
+		<h2>小程序风格修改</h2>
+		<form  class="form-horizontal" role="form" action="{:U('Formwork/runAdd_banben_fg',array('id'=>$info['id'],'bid'=>$info['bid']))}" method="post">
+
+	</if>
+			<div class="form-group">
+					<label for="firstname" class="col-sm-1 control-label">风格名称：</label>
+					<div class="col-sm-11">
+						<input value="{$info.name}" name="name"  type="text" class="form-control" id="firstname" placeholder="请输入模板版本号">
+					</div>
+				</div>																						
+				<div class="form-group">
+					<label for="firstname" class="col-sm-1 control-label">风格差价：</label>
+					<div class="col-sm-11">
+						<input value="{$info.price}" name="price"  type="text" class="form-control" id="firstname" placeholder="请输入模板版本号">
+					</div>
+				</div>	
+				
+				<div class="form-group">
+					<label for="firstname" class="col-sm-1 control-label">风格特点：</label>
+					<div class="col-sm-11">
+					<!--	<input value="{$info.case}" name="case"  type="text" class="form-control" id="firstname" placeholder="请输入模板版本号">
+				-->	
+					<foreach name="fg_ts" item="v">
+						<input name="characteristics[]" type="checkbox"
+						<?php 
+								$os=explode(",",$info['characteristics']);
+								if(in_array($v['id'], $os)) {
+									echo "checked";
+								}
+						 ?>
+							 value="{$v.id}" />{$v.instruction}&nbsp &nbsp
+					</foreach>
+				
+				<!--<label><input name="Fruit[]" type="checkbox" value="桃子"  />桃子 </label> 
+					<label><input name="Fruit[]" type="checkbox" value="香蕉" />香蕉 </label-->
+					</div>
+				</div>	
+				
+				<div class="form-group">
+					<label for="firstname" class="col-sm-1 control-label">风格案例：</label>
+					<div class="col-sm-11">
+						<input value="{$info.case}" name="case"  type="text" class="form-control" id="firstname" placeholder="请输入模板版本号">
+					</div>
+				</div>	
+			<!--<div class="form-group">
+					<label for="lastname" class="col-sm-1 control-label">风格特点:</label>
+					<div class="col-sm-11">
+						<textarea name="remark" class="form-control" rows="12">{$info.remark}</textarea>								  
+					</div>
+				</div>-->
+				
+				<div class="form-group">
+					<label for="lastname" class="col-sm-1 control-label">是否使用:</label>
+					<div class="col-sm-11">
+										<if condition="$info.state eq 1">
+										<label class="radio-inline"><input type="radio" name="state" value="1" checked="true"> 使用</label>
+											<else/>	
+											<label class="radio-inline"><input type="radio" name="state" value="1"> 使用</label>
+										</if>
+										<if condition="$info.state eq 2">
+											<label class="radio-inline"><input type="radio" name="state" value="2" checked="true"> 禁用</label>
+											<else/>	
+											<label class="radio-inline"><input type="radio" name="state" value="2" > 禁用</label>
+										</if>
+										<span class="help-block"></span>						
+					</div>
+				</div>
+				<div style="float:right;">
+				<!--<button type="button" class="btn btn-default">返回</button>-->
+				<if condition="$is_add eq 1">
+					<a class="btn btn-default" href="__ROOT__/adz.php/Formwork/banben_fg?id={$info2}">返回</a>
+
+				</if>
+					<if condition="$is_add eq 2">
+						<a class="btn btn-default" href="__ROOT__/adz.php/Formwork/banben_fg?id={$info['bid']}">返回</a>
+
+					</if>
+				<button type="submit" class="btn btn-primary">确认</button>
+			</div>
+			</form>							
+				
+															
+		</div>
+
+<script>
+    KindEditor.ready(function(K) {
+        var editor1 = K.create('textarea[name="remark"]', {
+            cssPath : '__ROOT__/Public/keditor/plugins/code/prettify.css',
+            uploadJson : '__ROOT__/Public/keditor/php/upload_json.php',
+            fileManagerJson : '__ROOT__/Public/keditor/php/file_manager_json.php',
+            allowFileManager : true
+        });
+        prettyPrint();
+    });
+</script>

@@ -1,0 +1,123 @@
+<include file="Public/head" />
+<!-- banner -->
+	<div class="swiper-container banner">
+	    <div class="swiper-wrapper">
+	        <div class="swiper-slide"><img src="__ROOT__/Public/img/banner-9.jpg"></div>
+	        <div class="swiper-slide"><img src="__ROOT__/Public/img/banner-10.jpg"></div>
+	        <div class="swiper-slide"><img src="__ROOT__/Public/img/banner-12.jpg"></div>
+	    </div>
+	    <!-- 如果需要分页器 -->
+	    <div class="swiper-pagination"></div>
+	    
+	    <!-- 如果需要导航按钮 -->
+	    <div class="swiper-button-prev Button"></div>
+	    <div class="swiper-button-next Button"></div>
+	</div>
+<!-- 图标 -->
+		<!--<icon class="tubiaoA"></icon>-->
+	<include file="Public/icon"/>
+<!-- 案列 -->
+	<div class="text-center an-lie">
+		<h2>小程序多流量入口</h2>
+		<hr style="width: 100px">
+		<div>
+			<ul class="box-center anlie1 center fade-in">
+				<li>
+					<div class="hover1">
+						<img src="__ROOT__/Public/img/erweima01.png">
+					</div>
+				<img src="__ROOT__/Public/img/anlie01.jpg"> 
+				</li>
+				<li>
+					<div class="hover1">
+						<img src="__ROOT__/Public/img/erweima2.jpg">
+					</div>
+					<img src="__ROOT__/Public/img/anlie2.jpg"> 
+				</li>
+				<li>
+					<div class="hover1">
+						<img src="__ROOT__/Public/img/erweima3.jpg">
+					</div>
+				<img src="__ROOT__/Public/img/anlie3.jpg"> 
+				</li>
+				<li>
+					<div class="hover1">
+						<img src="__ROOT__/Public/img/erweima4.jpg">
+					</div>
+					<img src="__ROOT__/Public/img/anlie4.jpg"> 
+				</li>
+			</ul>
+			<ul class="box-center anlie1 center fade-in">
+				<li>
+					<div class="hover1">
+						<img src="__ROOT__/Public/img/erweima5.jpg">
+					</div>
+					<img src="__ROOT__/Public/img/anlie5.jpg"> 
+				</li>
+				<li>
+					<div class="hover1">
+						<img src="__ROOT__/Public/img/erweima6.jpg">
+					</div>
+					<img src="__ROOT__/Public/img/anlie6.jpg"> 
+				</li>
+				<li>
+					<div class="hover1">
+						<img src="__ROOT__/Public/img/erweima7.jpg">
+					</div>
+					<img src="__ROOT__/Public/img/anlie7.jpg"> 
+				</li>
+				<li>
+					<div class="hover1">
+						<img src="__ROOT__/Public/img/erweima8.jpg">
+					</div>
+					<img src="__ROOT__/Public/img/anlie8.jpg"> 
+				</li>
+			</ul>
+			<ul class="box-center anlie1 center fade-in">
+				<li>
+					<div class="hover1">
+						<img src="__ROOT__/Public/img/erweima9.jpg">
+					</div>
+					<img src="__ROOT__/Public/img/anlie9.jpg"> 
+				</li>
+				<li>
+					<div class="hover1">
+						<img src="__ROOT__/Public/img/erweima10.jpg">
+					</div>
+					<img src="__ROOT__/Public/img/anlie10.jpg"> 
+				</li>
+				<li>
+					<div class="hover1">
+						<img src="__ROOT__/Public/img/erweima11.jpg">
+					</div>
+					<img src="__ROOT__/Public/img/anlie11.jpg"> 
+				</li>
+				<li class="sekuai">
+					<div class="hover1">
+						<img src="__ROOT__/Public/img/erweima12.jpg">
+					</div>
+					<img src="__ROOT__/Public/img/anlie12.jpg"> 
+				</li>
+			</ul>
+		</div>
+	</div>
+		<include file="Public/foot" />
+<script type="text/javascript">
+		window.onload=function(){ 
+			var widtch = $(".sekuai").css("width")
+			var height = $(".sekuai").css("height")
+			$(".hover1").width(widtch).height(height)
+		//	console.log(widtch)
+		//	swiper();
+		//icon();
+		//	bottom();
+		//	daohan();
+			jianxian();
+			var oDiv = document.getElementById('aa');
+			var aLi = oDiv.getElementsByTagName('li');
+		//	aLi[2].style.backgroundColor="#000";			
+		}
+
+	</script>
+</body>
+</html>

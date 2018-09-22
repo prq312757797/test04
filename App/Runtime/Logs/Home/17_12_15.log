@@ -1,0 +1,21 @@
+[ 2017-12-15T17:03:00+08:00 ] ::1 /jtct02/index.php/Case/index02?order_num=JT20171101080014997612
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013672s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.025391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.026367s ]
+SQL: SHOW COLUMNS FROM `order_form` [ RunTime:0.0107s ]
+SQL: SELECT order_form.order_num,order_form.express_id,order_form.express_num,express.code FROM `order_form` left join express ON express.id=order_form.express_id  WHERE ( order_num='JT20171101080014997612' ) LIMIT 1   [ RunTime:0.0107s ]
+ERR: Think\Controller:KuaidiAPi方法不存在！
+
+[ 2017-12-15T17:03:52+08:00 ] ::1 /jtct02/index.php/Case/index02?order_num=JT20171101080014997612
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `order_form` [ RunTime:0.0088s ]
+SQL: SELECT order_form.order_num,order_form.express_id,order_form.express_num,express.code FROM `order_form` left join express ON express.id=order_form.express_id  WHERE ( order_num='JT20171101080014997612' ) LIMIT 1   [ RunTime:0.0098s ]
+
