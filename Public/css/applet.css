@@ -1,0 +1,67 @@
+
+h3{
+	font-size:30px;
+}
+.dakai{
+	margin-bottom:30px;
+}
+.dakai>p{
+	margin-bottom:45px;
+}
+.youshi{
+	background-color:#f8f8f8;
+	margin-bottom:65px;
+}
+.youshi>div{
+	width:75%;
+	padding:40px 0 40px 0;
+}
+.youshi p{
+	display:inline-block;
+	font-weight:700;
+	color:#666;
+}
+.youshi ul li{
+	padding-top:20px;
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 1050px) {
+	.dakai div ul li{
+		padding-top:20px;
+		max-width:25%;
+		max-height:50%;
+	}
+	.dakai div ul li img{
+		width:100%;
+	}
+	.dakai>p{
+		margin-bottom:20px;
+	}
+	.dakai{
+		margin-top:20px; 
+	}
+}
+@media screen and (max-width: 750px) {
+	.youshi>div{
+		width:95%;
+	}
+	.dakai>p{
+		margin-bottom:0px;
+	}
+	.youshi{
+		margin-bottom:25px;
+	}
+
+	h3{
+		font-size:18px;
+	}
+	.yunyin{
+		display:none !important;
+	}
+
+}
+	
+

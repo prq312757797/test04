@@ -1,0 +1,123 @@
+
+.Advantage{
+	margin-bottom: 60px;
+}
+.public i{
+	max-width:50%;
+	margin:50px 0 20px 0; 
+	display:inline-block;
+}
+.public i>img{
+	width:100%;
+	height:100%;
+}
+.jisu span{
+	padding:0px 5px 5px 5px;
+	color:#666;
+}
+.jisu{
+	margin-bottom:60px;
+}
+.jisu>div ul li p{
+	padding-bottom:10px;
+}
+.jisu>div ul li{
+	padding:5px 10px 5px 10px;  
+}
+.Advantage>p,.jisu>p {
+	margin-bottom:30px;
+}
+.Advantage-tu ul{
+	margin-bottom:40px;
+}
+.Advantage-tu ul li{
+	width:23%;
+	border-radius:8px;
+	border:1px solid #e1e1e1;
+}
+.Advantage-tu ul li>p{
+	font-size:30px;
+	color:#666;
+	padding-bottom:75px;
+}
+.youshi-w{
+	max-width:79%;
+}
+.funfact ul li strong{
+	margin-top:12px;
+	margin-bottom:12px;
+}
+.hezuo{
+	width: 85%;
+}
+.hezuo li{
+	position:relative;
+	width:24%;
+	height:20%;
+}
+.hezuo li img{
+	width:100%;
+}
+
+@media screen and (max-width: 1200px) {
+	.Advantage-tu ul li>p{
+		font-size:25px;
+		padding-bottom:55px;
+	}
+}
+
+@media screen and (max-width: 1050px) {
+	.Advantage-tu ul li>p{
+		font-size:15px;
+		padding-bottom:35px;
+	}
+	.jisu>div ul li{
+		width:35%;  
+	}
+	
+}
+@media screen and (max-width: 750px) {
+	.hezuo{
+		width: 98%;
+	}
+	.hezuo li{
+		position:relative;
+		width:24%;
+		height:20%;
+	}
+	.youshi-w{
+		max-width:98%;
+	}
+	.public i{
+		margin:15px 0 15px 0;
+	}
+	.Advantage-tu ul{
+		width:98% !important;
+	}
+	.Advantage-tu ul li{
+		max-width:24%;
+	}
+	.Advantage-tu ul li>p{
+		padding-bottom:10px !important;
+	}
+	.Advantage>p, .jisu>p{
+		margin-bottom:15px;
+	}
+	.Advantage-tu ul{
+		margin-bottom:15px;
+	}
+	.Advantage{
+		margin-top: 15px;
+		margin-bottom:10px;
+	}
+	.Advantage-tu ul li{
+		max-width:33%;
+	}
+	.jisu{
+		margin-bottom:0px;
+		margin-top:20px;
+	}
+	.Advantage-tu ul li>p{
+		font-size:12px;
+	}
+}

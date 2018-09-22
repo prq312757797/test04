@@ -1,0 +1,175 @@
+		h3{
+			font-size:30px;
+		}
+		.jitai{
+			width: 84%;
+		}
+		.jitai-tu{
+			width:46%;
+		}
+		.jitai-tu>img{
+			width:100%;
+		}
+		.jianjie{
+			width: 45%;
+		}
+		.jianjie p{
+			margin-top: 25px;
+			line-height: 35px;
+			font-size:16px;
+			text-align:justify;
+			text-indent: 2em;
+		}
+		.jianjie h3{
+			margin-top: 13%;
+		}
+		.gaoxin{
+			padding-left:8%;
+		}
+		.gaoxin h3{
+			margin: 50px 0 25px 0;
+			display: inline-block;
+		}
+		.gaoxin span{
+			font-size: 20px;
+			color: #666;
+		}
+		.rencai{
+			background-color: #f8f8f8;
+			padding-left:8%; 
+			padding-right:8%; 
+		}
+		.rencai>div{
+			margin-bottom:50px;
+		}
+		.rencai h4{
+			padding-top: 30px;
+			padding-bottom: 10px;
+		}
+		.rencai ul li{
+			line-height: 25px;
+		}
+		.ditu-u{
+			margin-bottom:15px;
+		}
+		.kuang {
+			width: 60%;
+			height: 100%;
+			float: left;
+		}
+		.des h3{
+			padding: 40px 0 10px 0;
+		}
+		.des p{
+			font-size: 20px;
+		}
+		.des ul li{
+			margin-top: 10px;
+		}
+		.jies{
+			display:none;
+		}
+		.ditu-u{
+			height:50%;
+		}
+
+
+@media screen and (max-width: 1200px) {
+	.jitai{
+
+	}
+	.jianjie h3{
+		margin-top:20px;
+	}
+	.jianjie p{
+		margin-top:5px;
+	}
+	.jianjie h3{
+		margin-top:0;
+		font-size:20px;
+	}
+	.des {
+		padding-left:20px;
+	}
+	.kuang {
+		height: 80%;
+	}
+
+}
+
+@media screen and (max-width: 1050px) {
+	.jianjie p{
+		line-height:28px;
+	}
+	.gaoxin h3{
+		margin:20px 0 16px 0;
+	}
+	.kuang {
+		height: 95%;
+	}
+}
+@media screen and (max-width: 900px) {
+	.jianjie p{
+		line-height:25px;
+		font-size:14px;
+	}
+}
+@media screen and (max-width: 750px) {
+	.jianjie p{
+			display:none;
+		}
+	.jianjie{
+		width:100%;
+	}
+	.jitai-tu{
+		display:none;
+		// width:50%;
+	}
+	.jianjie h3{
+		font-size:20px;
+		// margin-top:15%;
+		line-height:150%;
+	}
+	.jitai{
+			padding-top:30px;
+		}
+	.gaoxin h3{
+		font-size:18px;
+		margin: 32px 0 7px 0;
+	}
+	.gaoxin span{
+		font-size:13px;
+	}
+	.rencai h4{
+		padding-top:10px;
+		font-size:16px;
+	}
+	.jies{
+		width:90%;
+		padding-top:15px;
+		line-height:30px;
+		display:-webkit-box;
+		}
+	.rencai,.gaoxin{
+		padding-left:3%;
+		padding-right:3%;
+	}
+	.des{
+		display:none;
+	}
+	.kuang{
+		width:100%;
+	}
+	.ditu-u{
+		width:98% !important;
+	}
+	.rencai>div{
+		margin-bottom:20px;
+	}
+	.rencai ul li{
+		font-size:12px;
+	}
+	.funfact ul li strong{
+		font-size:13px;
+	}
+}

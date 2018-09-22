@@ -1,0 +1,72 @@
+// .yunyinn,.ruKouu{
+// 	display:none;
+// }
+.block{
+	display:block;
+}
+.nonee{
+	display:none;
+}
+.anlie{
+	background: #edf7ff;
+	padding:10px;
+	margin-bottom: 40px;
+	overflow: hidden;
+}
+.blue-slide{
+	width: 25% !important;
+}
+.anliee{
+		width: 90% !important;
+	}
+.anlie img{
+	width: 90%;
+}
+.anlie-hover:hover{
+	background: rgba(0,0,0,0.5)!important;
+	transition: 0.5s;
+}
+.anlie-hover:hover img{
+	display: block;
+}
+.anlie-hover img{
+	width: 70% !important;
+	margin: 0 auto;
+	margin-top:70%;
+	display: none;
+	transition: 0.5s;
+}
+.anlie-hover{
+	width: 90%; 
+	left: 5%; 
+	height:100%;
+	background: rgba(0,0,0,0);
+	z-index: 5;
+	position: absolute;
+}
+.funfact ul{
+	width:81%;
+}
+
+@media screen and (max-width: 750px) {
+	
+	.anliee{
+		width: 98% !important;
+	}
+	.wxchenxun>p{
+		font-size:12px;
+	}
+	.yunyinn,.ruKouu{
+		display:block !important;
+	}
+	.block{
+		display:none !important;
+	}
+	.nonee{
+		display:block;
+	}
+
+	// .yunyin,.ruKou{
+	// 	display:none !important;
+	// }
+}
